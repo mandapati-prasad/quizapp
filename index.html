@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/71b97c4ea7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-box">
+        <div class="start">
+          <h1>Welcome to the QuizWorld!</h1>
+          <form action="">
+            <input type="text" placeholder="Enter Name..." id="name"/>
+            <button class="start-btn" id="btn">start</button>
+          </form>
+        </div>
+        <div class="quiz" id="quiz">
+          <h1>Answer The Below Question</h1>
+          <div class="quiz-header">
+            <p class="progress" id="progress"></p>
+            <p class="timer"><i class="fa fa-stopwatch"></i> <span id="timer">0:00 </span></p>
+          </div>
+
+          <p class="question" id="question">What is your name?</p>
+
+          <div class="buttons">
+            <button class="btn" id="btn0">A. <span id="choice0"></span></button>
+            <button class="btn" id="btn1">B. <span id="choice1"></span></button>
+            <button class="btn" id="btn2">C. <span id="choice2"></span></button>
+            <button class="btn" id="btn3">D. <span id="choice3"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <p>&copy;copyrights reserved by QuizWorld </p>
+    </footer>
+
+
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
